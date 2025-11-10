@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+<script src="js/main.JS"></script>
+<script>
+    $(function () {
+        $('html').animate({
+            scrollTop: $('#target-element').offset().top
+        }, 800);
+
+    })
+</script>
 
 <body>
     <header id="header">
@@ -30,6 +39,14 @@
     </header><!-- #header end -->
     <main id="main">
         <section class="main_visual">
+            <div class="inner">
+                <div class="visual_text">
+                    <h2 class="text_top">WEB DESIGN</h2><!-- .text_top end -->
+                    <h2 class="text_middle">PORTFOLIO</h2><!-- .text_middle end -->
+                    <h2 class="text_bottom">DAJUNG LEE</h2><!-- .text_bottom end -->
+
+                </div><!-- .visual_text end -->
+            </div><!-- .inner end -->
 
         </section><!-- .main_visual end -->
         <section class="section-01">
@@ -85,327 +102,331 @@
         </section><!-- .section-1 end -->
         <section class="section-02 section">
             <div class="inner">
+                <h2 class="section_title">Web/App</h2><!-- .section_title end -->
                 <ul class="cat_wrap">
-                    <li><a href="#" class="web_renewal">Web</a></li>
-                    <li><a href="#" class="app_renewal">Mobile</a></li>
-                    <li><a href="#" class="clone_coding">Clone Coding</a></li>
-                    <li><a href="#" class="design">Design</a></li>
+                    <li><button class="web_renewal">Web</button></li>
+                    <li><button class="app_renewal">Mobile</button></li>
+                    <li><button class="clone_coding">Clone Coding</button></li>
                 </ul><!-- .cat_wrap end -->
-                <div class="list">
-                    <div class="item">
-                        <h3 class="item-title">[반응형] ‘가일전통안료’ 웹 페이지 리뉴얼</h3>
-                        <div class="item-left">
-                            <div class="image">
-                                <img src="img/section/mockup1.png" alt="">
-                            </div><!-- image end -->
-                            <ul class="tool">
-                                <li><img src="img/icon/icon-html.svg" alt=""><span>HTML</span></li>
-                                <li><img src="img/icon/icon-css.svg" alt=""><span>CSS</span></li>
-                                <li><img src="img/icon/icon-js.svg" alt=""><span>JS</span></li>
-                                <li><img src="img/icon/icon-jq.svg" alt=""><span>JQuery</span></li>
-                                <li><img src="img/icon/icon-figma.svg" alt=""><span>Figma</span></li>
-                                <li><img src="img/icon/icon-ai.svg" alt=""><span>AI</span></li>
-                                <li><img src="img/icon/icon-psd.svg" alt=""><span>PSD</span></li>
+                <article class="contents">
 
-                            </ul><!-- .tool end -->
-                        </div><!-- .item-left end -->
-                        <div class="item-right">
-                            <ul class="project_info">
-                                <li>
-                                    <strong>참여도</strong>
-                                    <p>기획, 디자인, 퍼블리싱 100%</p>
-                                </li>
-                                <li>
-                                    <strong>Style</strong>
-                                    <p>전통적(Traditional), 클래식(Classic)</p>
-                                </li>
-                                <li>
-                                    <strong>목적</strong>
-                                    <p>옛 방식을 고수하는 국내 전통 안료 제조 기업 ‘가일 전통 안료’의 메인 페이지를 브랜드 컨셉에 맞게 반응형으로 리디자인 하였습니다. </p>
-                                </li>
-                                <li>
-                                    <strong>방향성</strong>
-                                    <p>옛 방식을 고수하는 국내 전통 안료 제조 기업 ‘가일 메인 페이지를 브랜드 컨셉에 맞게 반응형으로 리디자인 하였습니다. </p>
-                                </li>
-                            </ul><!-- .project_info end -->
-                            <img src="img/source/QRcode1.svg" alt="" class="QR">
+                    <div class="list list-01">
+                        <div class="item">
+                            <h3 class="item-title">[반응형] ‘가일전통안료’ 웹 페이지 리뉴얼</h3>
+                            <div class="item-left">
+                                <div class="image">
+                                    <img src="img/section/mockup1.png" alt="">
+                                </div><!-- image end -->
+                                <ul class="tool">
+                                    <li><img src="img/icon/icon-html.svg" alt=""><span>HTML</span></li>
+                                    <li><img src="img/icon/icon-css.svg" alt=""><span>CSS</span></li>
+                                    <li><img src="img/icon/icon-js.svg" alt=""><span>JS</span></li>
+                                    <li><img src="img/icon/icon-jq.svg" alt=""><span>JQuery</span></li>
+                                    <li><img src="img/icon/icon-figma.svg" alt=""><span>Figma</span></li>
+                                    <li><img src="img/icon/icon-ai.svg" alt=""><span>AI</span></li>
+                                    <li><img src="img/icon/icon-psd.svg" alt=""><span>PSD</span></li>
 
-                            <ul class="link_wrap">
-                                <li><a href="https://dajeong-lee-commits.github.io/gail-home/">Web Site</a></li>
-                                <li><a href="#">Process</a></li>
-                                <li><a
-                                        href="https://www.figma.com/design/Vdm9BjqxvXeMhYQQXQwB4L/%EC%9D%B4%EB%8B%A4%EC%A0%95_%EA%B0%80%EC%9D%BC%EC%A0%84%ED%86%B5%EC%95%88%EB%A3%8C?node-id=69-172&m=dev&t=DvLaqhTrTQfMEoEL-1">Figma</a>
-                                </li>
-                            </ul>
-                        </div><!-- .item-right end -->
-                    </div><!-- .item end -->
-                    <div class="item">
-                        <h3 class="item-title">반응형] ‘휩드’ 웹 페이지 리뉴얼</h3>
-                        <div class="item-left">
-                            <div class="image">
-                                <img src="img/section/mockup2.png" alt="">
-                            </div><!-- image end -->
-                            <ul class="tool">
-                                <li><img src="img/icon/icon-html.svg" alt=""><span>HTML</span></li>
-                                <li><img src="img/icon/icon-css.svg" alt=""><span>CSS</span></li>
-                                <li><img src="img/icon/icon-js.svg" alt=""><span>JS</span></li>
-                                <li><img src="img/icon/icon-jq.svg" alt=""><span>JQuery</span></li>
-                                <li><img src="img/icon/icon-figma.svg" alt=""><span>Figma</span></li>
-                                <li><img src="img/icon/icon-ai.svg" alt=""><span>AI</span></li>
-                                <li><img src="img/icon/icon-psd.svg" alt=""><span>PSD</span></li>
+                                </ul><!-- .tool end -->
+                            </div><!-- .item-left end -->
+                            <div class="item-right">
+                                <ul class="project_info">
+                                    <li>
+                                        <strong>참여도</strong>
+                                        <p>기획, 디자인, 퍼블리싱 100%</p>
+                                    </li>
+                                    <li>
+                                        <strong>Style</strong>
+                                        <p>전통적(Traditional), 클래식(Classic)</p>
+                                    </li>
+                                    <li>
+                                        <strong>목표</strong>
+                                        <p>국내 전통 물감 제조 브랜드 '가일 전통 안료'의 웹페이지 리디자인 프로젝트 입니다.
+                                            다양한 디바이스 환경에 맞춘 3가지 반응형 레이아웃을 설계하여 사용자에게 한국 전통 채색에 대한 미감과 정보를 효과적으로
+                                            전달하는 것을 목표로 하였습니다.</p>
+                                    </li>
 
-                            </ul><!-- .tool end -->
-                        </div><!-- .item-left end -->
-                        <div class="item-right">
-                            <ul class="project_info">
-                                <li>
-                                    <strong>참여도</strong>
-                                    <p>기획, 디자인, 퍼블리싱 100%</p>
-                                </li>
-                                <li>
-                                    <strong>Style</strong>
-                                    <p>로맨틱(Romantic), 파스텔(Pastel)</p>
-                                </li>
-                                <li>
-                                    <strong>목적</strong>
-                                    <p>휘핑크림을 모티브로 한 비건 코스메틱 브랜드 ‘휩드’의 메인 페이지를 브랜드 컬러감이 돋보일 수 있도록 리뉴얼 하였습니다</p>
-                                </li>
-                                <li>
-                                    <strong>방향성</strong>
-                                    <p>휘핑크림을 모티브로 한 비건 코스메틱 브랜드 ‘휩드’의 메인 페이지를 브랜드 컬러감이 돋보일 수 있도록 리뉴얼 하였습니다</p>
-                                </li>
-                            </ul><!-- .project_info end -->
-                            <img src="img/source/QRcode1.svg" alt="" class="QR">
+                                </ul><!-- .project_info end -->
+                                <img src="img/source/QRcode1.svg" alt="" class="QR">
 
-                            <ul class="link_wrap">
-                                <li><a href="https://dajeong-lee-commits.github.io/whipped/">Web Site</a></li>
-                                <li><a
-                                        href="https://www.figma.com/design/BdzfQT1PjLesvsha6xDNRP/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C?node-id=0-1&m=dev&t=K8JpxzkXPW6nUKeV-1">Figma</a>
-                                </li>
-                            </ul>
-                        </div><!-- .item-wrap end -->
-                    </div><!-- .item end -->
-                    <div class="item">
-                        <h3 class="item-title">‘성심당’ 웹 페이지 리뉴얼</h3>
-                        <div class="item-left">
-                            <div class="image">
-                                <img src="img/section/mockup3.png" alt="">
-                            </div><!-- image end -->
-                            <ul class="tool">
-                                <li><img src="img/icon/icon-figma.svg" alt=""><span>Figma</span></li>
-                                <li><img src="img/icon/icon-ai.svg" alt=""><span>AI</span></li>
-                                <li><img src="img/icon/icon-psd.svg" alt=""><span>PSD</span></li>
+                                <ul class="link_wrap">
+                                    <li><a href="https://dajeong-lee-commits.github.io/gail-home/">Web Site</a></li>
+                                    <li><a href="#">Process</a></li>
+                                    <li><a
+                                            href="https://www.figma.com/design/Vdm9BjqxvXeMhYQQXQwB4L/%EC%9D%B4%EB%8B%A4%EC%A0%95_%EA%B0%80%EC%9D%BC%EC%A0%84%ED%86%B5%EC%95%88%EB%A3%8C?node-id=69-172&m=dev&t=DvLaqhTrTQfMEoEL-1">Figma</a>
+                                    </li>
+                                </ul>
+                            </div><!-- .item-right end -->
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <h3 class="item-title">[반응형] ‘휩드’ 웹 페이지 리뉴얼</h3>
+                            <div class="item-left">
+                                <div class="image">
+                                    <img src="img/section/mockup2.png" alt="">
+                                </div><!-- image end -->
+                                <ul class="tool">
+                                    <li><img src="img/icon/icon-html.svg" alt=""><span>HTML</span></li>
+                                    <li><img src="img/icon/icon-css.svg" alt=""><span>CSS</span></li>
+                                    <li><img src="img/icon/icon-js.svg" alt=""><span>JS</span></li>
+                                    <li><img src="img/icon/icon-jq.svg" alt=""><span>JQuery</span></li>
+                                    <li><img src="img/icon/icon-figma.svg" alt=""><span>Figma</span></li>
+                                    <li><img src="img/icon/icon-ai.svg" alt=""><span>AI</span></li>
+                                    <li><img src="img/icon/icon-psd.svg" alt=""><span>PSD</span></li>
 
-                            </ul><!-- .tool end -->
-                        </div><!-- .item-left end -->
-                        <div class="item-right">
-                            <ul class="project_info">
-                                <li>
-                                    <strong>참여도</strong>
-                                    <p>기획, 디자인</p>
-                                </li>
-                                <li>
-                                    <strong>Style</strong>
-                                    <p>심플(Simple), 헤리티지(Heritage)</p>
-                                </li>
-                                <li>
-                                    <strong>목적</strong>
-                                    <p>대전의 향토 제과점인 ‘성심당’의 메인페이지와 서브 페이지 (로그인, 제품 쇼핑) 일부를 리디자인 하였습니다.</p>
-                                </li>
-                                <li>
-                                    <strong>방향성</strong>
-                                    <p>휘핑크림을 모티브로 한 비건 코스메틱 브랜드 ‘휩드’의 메인 페이지를 브랜드 컬러감이 돋보일 수 있도록 리뉴얼 하였습니다</p>
-                                </li>
-                            </ul><!-- .project_info end -->
-                            <img src="img/source/QRcode1.svg" alt="" class="QR">
+                                </ul><!-- .tool end -->
+                            </div><!-- .item-left end -->
+                            <div class="item-right">
+                                <ul class="project_info">
+                                    <li>
+                                        <strong>참여도</strong>
+                                        <p>기획, 디자인, 퍼블리싱 100%</p>
+                                    </li>
+                                    <li>
+                                        <strong>Style</strong>
+                                        <p>로맨틱(Romantic), 파스텔(Pastel)</p>
+                                    </li>
+                                    <li>
+                                        <strong>목표</strong>
+                                        <p>달콤한 감성과 부드러운 비주얼을 담은 휩드의 반응형 웹 페이지를 설계하여
+                                            디바이스 별 제품 슬라이드 구조가 자연스럽게 바뀔 수 있도록 설계하였으며
+                                            사용자들에게 휩드만의 감성을
+                                        </p>
+                                    </li>
 
-                            <ul class="link_wrap">
-                                <li><a
-                                        href="https://www.figma.com/design/ikWmFDFExVNeifC77wt04T/%EC%84%B1%EC%8B%AC%EB%8B%B9_%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=9-71&m=dev&t=dmOaY8mziiCNPUTq-1">Figma</a>
-                                </li>
-                                <li><a
-                                        href="https://www.figma.com/proto/ikWmFDFExVNeifC77wt04T/%EC%84%B1%EC%8B%AC%EB%8B%B9_%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=9-71&t=dmOaY8mziiCNPUTq-1">Prototype</a>
-                                </li>
-                                <li><a href="#">Process</a></li>
-                            </ul>
-                        </div><!-- .item-right end -->
-                    </div><!-- .item end -->
-                </div><!-- .list end -->
+                                </ul><!-- .project_info end -->
+                                <img src="img/source/QRcode1.svg" alt="" class="QR">
+
+                                <ul class="link_wrap">
+                                    <li><a href="https://dajeong-lee-commits.github.io/whipped/">Web Site</a></li>
+                                    <li><a
+                                            href="https://www.figma.com/design/BdzfQT1PjLesvsha6xDNRP/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C?node-id=0-1&m=dev&t=K8JpxzkXPW6nUKeV-1">Figma</a>
+                                    </li>
+                                </ul>
+                            </div><!-- .item-wrap end -->
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <h3 class="item-title">‘성심당’ 웹 페이지 리뉴얼</h3>
+                            <div class="item-left">
+                                <div class="image">
+                                    <img src="img/section/mockup3.png" alt="">
+                                </div><!-- image end -->
+                                <ul class="tool">
+                                    <li><img src="img/icon/icon-figma.svg" alt=""><span>Figma</span></li>
+                                    <li><img src="img/icon/icon-ai.svg" alt=""><span>AI</span></li>
+                                    <li><img src="img/icon/icon-psd.svg" alt=""><span>PSD</span></li>
+
+                                </ul><!-- .tool end -->
+                            </div><!-- .item-left end -->
+                            <div class="item-right">
+                                <ul class="project_info">
+                                    <li>
+                                        <strong>참여도</strong>
+                                        <p>기획, 디자인</p>
+                                    </li>
+                                    <li>
+                                        <strong>Style</strong>
+                                        <p>심플(Simple), 헤리티지(Heritage)</p>
+                                    </li>
+                                    <li>
+                                        <strong>목적</strong>
+                                        <p>대전의 향토 제과점인 ‘성심당’의 메인페이지와 서브 페이지 (로그인, 제품 쇼핑) 일부를 리디자인 하였습니다.</p>
+                                    </li>
+                                    <li>
+                                        <strong>방향성</strong>
+                                        <p>휘핑크림을 모티브로 한 비건 코스메틱 브랜드 ‘휩드’의 메인 페이지를 브랜드 컬러감이 돋보일 수 있도록 리뉴얼 하였습니다</p>
+                                    </li>
+                                </ul><!-- .project_info end -->
+                                <img src="img/source/QRcode1.svg" alt="" class="QR">
+
+                                <ul class="link_wrap">
+                                    <li><a
+                                            href="https://www.figma.com/design/ikWmFDFExVNeifC77wt04T/%EC%84%B1%EC%8B%AC%EB%8B%B9_%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=9-71&m=dev&t=dmOaY8mziiCNPUTq-1">Figma</a>
+                                    </li>
+                                    <li><a
+                                            href="https://www.figma.com/proto/ikWmFDFExVNeifC77wt04T/%EC%84%B1%EC%8B%AC%EB%8B%B9_%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=9-71&t=dmOaY8mziiCNPUTq-1">Prototype</a>
+                                    </li>
+                                    <li><a href="#">Process</a></li>
+                                </ul>
+                            </div><!-- .item-right end -->
+                        </div><!-- .item end -->
+                    </div><!-- .list.list-01 end -->
+
+
+
+                    <div class="list list-02">
+                        <div class="item">
+                            <h3 class="item-title">‘레고’ 모바일 앱 리뉴얼</h3>
+                            <div class="item-left">
+                                <div class="image">
+                                    <img src="img/section/mockup3.png" alt="">
+                                </div><!-- image end -->
+                                <ul class="tool">
+                                    <li><img src="img/icon/icon-html.svg" alt=""><span>HTML</span></li>
+                                    <li><img src="img/icon/icon-css.svg" alt=""><span>CSS</span></li>
+                                    <li><img src="img/icon/icon-js.svg" alt=""><span>JS</span></li>
+                                    <li><img src="img/icon/icon-jq.svg" alt=""><span>JQuery</span></li>
+                                    <li><img src="img/icon/icon-figma.svg" alt=""><span>Figma</span></li>
+                                    <li><img src="img/icon/icon-ai.svg" alt=""><span>AI</span></li>
+                                    <li><img src="img/icon/icon-psd.svg" alt=""><span>PSD</span></li>
+
+                                </ul><!-- .tool end -->
+                            </div><!-- .item-left end -->
+                            <div class="item-right">
+                                <ul class="project_info">
+                                    <li>
+                                        <strong>참여도</strong>8
+                                        <p>기획, 디자인, 퍼블리싱 100%</p>
+                                    </li>
+                                    <li>
+                                        <strong>Style</strong>
+                                        <p>전통적인(Traditional), 클래식(Classic)</p>
+                                    </li>
+                                    <li>
+                                        <strong>목적</strong>
+                                        <p>Lorem ipsum dolor sit amet consectetur, </p>
+                                    </li>
+                                    <li>
+                                        <strong>방향성</strong>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing .</p>
+                                    </li>
+                                </ul><!-- .project_info end -->
+                                <img src="img/source/QRcode1.svg" alt="" class="QR">
+
+                                <ul class="link_wrap">
+                                    <li><a
+                                            href="https://www.figma.com/proto/U0lbTKFutK55nTYbV92R1g/%EB%A0%88%EA%B3%A0_%EB%AA%A8%EB%B0%94%EC%9D%BC%EB%94%94%EC%9E%90%EC%9D%B8-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=482-3104&t=OnQCKrNRrnpFXbwq-1">Prototype</a>
+                                    </li>
+                                    <!-- <li><a href="#">Mobile page</a></li> -->
+                                    <li><a
+                                            href="https://www.figma.com/design/U0lbTKFutK55nTYbV92R1g/%EB%A0%88%EA%B3%A0_%EB%AA%A8%EB%B0%94%EC%9D%BC%EB%94%94%EC%9E%90%EC%9D%B8-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=1-4&m=dev&t=y2KXoBQwwuc6but2-1">Figma</a>
+                                    </li>
+                                </ul>
+                            </div><!-- .item-right end -->
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <h3 class="item-title">‘부산도시철도’ 모바일 앱 리뉴얼</h3>
+                            <div class="item-left">
+                                <div class="image">
+                                    <img src="img/section/mockup1.png" alt="">
+                                </div><!-- image end -->
+                                <ul class="tool">
+                                    <li><img src="img/icon/icon-figma.svg" alt=""><span>Figma</span></li>
+                                    <li><img src="img/icon/icon-ai.svg" alt=""><span>AI</span></li>
+                                    <li><img src="img/icon/icon-psd.svg" alt=""><span>PSD</span></li>
+
+                                </ul><!-- .tool end -->
+                            </div><!-- .item-left end -->
+                            <div class="item-right">
+                                <ul class="project_info">
+                                    <li>
+                                        <strong>참여도</strong>
+                                        <p>기획, 디자인, 퍼블리싱 100%</p>
+                                    </li>
+                                    <li>
+                                        <strong>Style</strong>
+                                        <p>단정한(Neat), 신뢰감 있는(Trustworthy)</p>
+                                    </li>
+                                    <li>
+                                        <strong>목적</strong>
+                                        <p>부산 도시철도 앱의 모바일 결제시 나타나는 문제점을 파악하고 이를 보완하여 앱의 메인, 결제 페이지를 리디자인 하였습니다.</p>
+                                    </li>
+                                    <li>
+                                        <strong>방향성</strong>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisici .</p>
+                                    </li>
+                                </ul><!-- .project_info end -->
+                                <img src="img/source/QRcode1.svg" alt="" class="QR">
+
+                                <ul class="link_wrap">
+                                    <li><a
+                                            href="https://www.figma.com/proto/wi0nQn7KR3dmafDnBdONLQ/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C?node-id=15-6&t=rN1yvJvJ0t3JJCNl-1">Prototype</a>
+                                    </li>
+                                    <li><a href="#">Process</a></li>
+
+                                </ul>
+                            </div><!-- .item-wrap end -->
+                        </div><!-- .item end -->
+
+                    </div><!-- .list.list-02 end -->
+
+
+                    <div class="list list-03">
+
+                        <div class="item">
+                            <h3 class="item-title">[반응형] ‘쏘카’ 클론 코딩</h3>
+                            <div class="item-left">
+                                <div class="image">
+                                    <img src="img/section/mockup1.png" alt="">
+                                </div><!-- image end -->
+                                <ul class="tool">
+                                    <li><img src="img/icon/icon-html.svg" alt=""><span>HTML</span></li>
+                                    <li><img src="img/icon/icon-css.svg" alt=""><span>CSS</span></li>
+                                    <li><img src="img/icon/icon-js.svg" alt=""><span>JS</span></li>
+                                    <li><img src="img/icon/icon-jq.svg" alt=""><span>JQuery</span></li>
+
+                                </ul><!-- .tool end -->
+                            </div><!-- .item-left end -->
+                            <div class="item-right">
+                                <ul class="project_info">
+                                    <li>
+                                        <strong>참여도</strong>
+                                        <p>퍼블리싱 100%</p>
+                                    </li>
+
+                                    <li>
+                                        <strong>목적</strong>
+                                        <p>부산 도시철도 앱의 모바일 결제시 나타나는 문제점을 파악하고 이를 보완하여 앱의 메인, 결제 페이지를 리디자인 하였습니다.</p>
+                                    </li>
+
+                                </ul><!-- .project_info end -->
+                                <img src="img/source/QRcode1.svg" alt="" class="QR">
+
+                                <ul class="link_wrap">
+                                    <li><a href="https://dajeong-lee-commits.github.io/socar/#">Web Site</a></li>
+                                </ul>
+                            </div><!-- .item-wrap end -->
+                        </div><!-- .item end -->
+
+                    </div><!-- .list.list-03 end -->
+                </article><!-- .contents end -->
             </div><!-- .inner -->
         </section><!-- .section-02.section end -->
 
+
+
+
+
         <section class="section-03 section">
             <div class="inner">
-                <ul class="cat_wrap">
-                    <li><a href="#" class="web_renewal">Web</a></li>
-                    <li><a href="#" class="app_renewal">Mobile</a></li>
-                    <li><a href="#" class="clone_coding">Clone Coding</a></li>
-                    <li><a href="#" class="design">Design</a></li>
-                    <li><a href="#" class="Artwork">ArtWork</a></li>
-                </ul><!-- .cat_wrap end -->
-                <div class="list">
-                    <div class="item">
-                        <h3 class="item-title">‘레고’ 모바일 앱 리뉴얼</h3>
-                        <div class="item-left">
-                            <div class="image">
-                                <img src="img/section/mockup3.png" alt="">
-                            </div><!-- image end -->
-                            <ul class="tool">
-                                <li><img src="img/icon/icon-html.svg" alt=""><span>HTML</span></li>
-                                <li><img src="img/icon/icon-css.svg" alt=""><span>CSS</span></li>
-                                <li><img src="img/icon/icon-js.svg" alt=""><span>JS</span></li>
-                                <li><img src="img/icon/icon-jq.svg" alt=""><span>JQuery</span></li>
-                                <li><img src="img/icon/icon-figma.svg" alt=""><span>Figma</span></li>
-                                <li><img src="img/icon/icon-ai.svg" alt=""><span>AI</span></li>
-                                <li><img src="img/icon/icon-psd.svg" alt=""><span>PSD</span></li>
-
-                            </ul><!-- .tool end -->
-                        </div><!-- .item-left end -->
-                        <div class="item-right">
-                            <ul class="project_info">
-                                <li>
-                                    <strong>참여도</strong>
-                                    <p>기획, 디자인, 퍼블리싱 100%</p>
-                                </li>
-                                <li>
-                                    <strong>Style</strong>
-                                    <p>전통적인(Traditional), 클래식(Classic)</p>
-                                </li>
-                                <li>
-                                    <strong>목적</strong>
-                                    <p>Lorem ipsum dolor sit amet consectetur, </p>
-                                </li>
-                                <li>
-                                    <strong>방향성</strong>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing .</p>
-                                </li>
-                            </ul><!-- .project_info end -->
-                            <img src="img/source/QRcode1.svg" alt="" class="QR">
-
-                            <ul class="link_wrap">
-                                <li><a
-                                        href="https://www.figma.com/proto/U0lbTKFutK55nTYbV92R1g/%EB%A0%88%EA%B3%A0_%EB%AA%A8%EB%B0%94%EC%9D%BC%EB%94%94%EC%9E%90%EC%9D%B8-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=482-3104&t=OnQCKrNRrnpFXbwq-1">Prototype</a>
-                                </li>
-                                <!-- <li><a href="#">Mobile page</a></li> -->
-                                <li><a
-                                        href="https://www.figma.com/design/U0lbTKFutK55nTYbV92R1g/%EB%A0%88%EA%B3%A0_%EB%AA%A8%EB%B0%94%EC%9D%BC%EB%94%94%EC%9E%90%EC%9D%B8-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=1-4&m=dev&t=y2KXoBQwwuc6but2-1">Figma</a>
-                                </li>
-                            </ul>
-                        </div><!-- .item-right end -->
-                    </div><!-- .item end -->
-                    <div class="item">
-                        <h3 class="item-title">‘부산도시철도’ 모바일 앱 리뉴얼</h3>
-                        <div class="item-left">
-                            <div class="image">
-                                <img src="img/section/mockup1.png" alt="">
-                            </div><!-- image end -->
-                            <ul class="tool">
-                                <li><img src="img/icon/icon-figma.svg" alt=""><span>Figma</span></li>
-                                <li><img src="img/icon/icon-ai.svg" alt=""><span>AI</span></li>
-                                <li><img src="img/icon/icon-psd.svg" alt=""><span>PSD</span></li>
-
-                            </ul><!-- .tool end -->
-                        </div><!-- .item-left end -->
-                        <div class="item-right">
-                            <ul class="project_info">
-                                <li>
-                                    <strong>참여도</strong>
-                                    <p>기획, 디자인, 퍼블리싱 100%</p>
-                                </li>
-                                <li>
-                                    <strong>Style</strong>
-                                    <p>단정한(Neat), 신뢰감 있는(Trustworthy)</p>
-                                </li>
-                                <li>
-                                    <strong>목적</strong>
-                                    <p>부산 도시철도 앱의 모바일 결제시 나타나는 문제점을 파악하고 이를 보완하여 앱의 메인, 결제 페이지를 리디자인 하였습니다.</p>
-                                </li>
-                                <li>
-                                    <strong>방향성</strong>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisici .</p>
-                                </li>
-                            </ul><!-- .project_info end -->
-                            <img src="img/source/QRcode1.svg" alt="" class="QR">
-
-                            <ul class="link_wrap">
-                                <li><a
-                                        href="https://www.figma.com/proto/wi0nQn7KR3dmafDnBdONLQ/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C?node-id=15-6&t=rN1yvJvJ0t3JJCNl-1">Prototype</a>
-                                </li>
-                                <li><a href="#">Process</a></li>
-
-                            </ul>
-                        </div><!-- .item-wrap end -->
-                    </div><!-- .item end -->
-
-                </div><!-- .list end -->
-            </div><!-- .inner -->
-        </section><!-- .section-03.section end -->
-        <section class="section-04 section">
-            <div class="inner">
-                <ul class="cat_wrap">
-                    <li><a href="#" class="web_renewal">Web</a></li>
-                    <li><a href="#" class="app_renewal">Mobile</a></li>
-                    <li><a href="#" class="clone_coding">Clone Coding</a></li>
-                    <li><a href="#" class="design">Design</a></li>
-                    <li><a href="#" class="Artwork">ArtWork</a></li>
-                </ul><!-- .cat_wrap end -->
-                <div class="list">
-
-                    <div class="item">
-                        <h3 class="item-title">[반응형] ‘쏘카’ 클론 코딩</h3>
-                        <div class="item-left">
-                            <div class="image">
-                                <img src="img/section/mockup1.png" alt="">
-                            </div><!-- image end -->
-                            <ul class="tool">
-                                <li><img src="img/icon/icon-html.svg" alt=""><span>HTML</span></li>
-                                <li><img src="img/icon/icon-css.svg" alt=""><span>CSS</span></li>
-                                <li><img src="img/icon/icon-js.svg" alt=""><span>JS</span></li>
-                                <li><img src="img/icon/icon-jq.svg" alt=""><span>JQuery</span></li>
-
-                            </ul><!-- .tool end -->
-                        </div><!-- .item-left end -->
-                        <div class="item-right">
-                            <ul class="project_info">
-                                <li>
-                                    <strong>참여도</strong>
-                                    <p>퍼블리싱 100%</p>
-                                </li>
-
-                                <li>
-                                    <strong>목적</strong>
-                                    <p>부산 도시철도 앱의 모바일 결제시 나타나는 문제점을 파악하고 이를 보완하여 앱의 메인, 결제 페이지를 리디자인 하였습니다.</p>
-                                </li>
-
-                            </ul><!-- .project_info end -->
-                            <img src="img/source/QRcode1.svg" alt="" class="QR">
-
-                            <ul class="link_wrap">
-                                <li><a href="https://dajeong-lee-commits.github.io/socar/#">Web Site</a></li>
-                            </ul>
-                        </div><!-- .item-wrap end -->
-                    </div><!-- .item end -->
-
-                </div><!-- .list end -->
-            </div><!-- .inner -->
-        </section><!-- .section-04.section end -->
-
-
-
-
-
-        <section class="section-05 section">
-            <div class="inner">
-                <h2 class="section_title">ABOUT</h2><!-- .section_title end -->
+                <h2 class="section_title">Design</h2><!-- .section_title end -->
                 <article class="contents">
-
-
 
                 </article><!-- .contents end -->
             </div><!-- .inner -->
-        </section><!-- .section-05 section end -->
+        </section><!-- .section-03 section end -->
+
 
     </main><!-- #main end -->
+    <footer id="footer">
+        <div class="inner">
+            <h2 class="section_title">THANK YOU!</h2><!-- .section_title end -->
+            <article class="contents">
+                <address>
+                    <h3>Contact me</h3>
+                    <span class="name">Da Jeong Lee</span>
+                    <a href="https://mail.google.com/mail/u/0/#inbox" class="email">yddddj@gmail.com</a>
+                    <span class="phone">010-2728-6705</span>
+                </address>
+                <small>
+                    <p>※ 본 사이트는 상업적 목적이 아닌 개인포트폴리오 사이트로 제작되었으며
+                        일부 내용 및 폰트, 이미지 등은 그 출처가 따로 있음을 밝힙니다.</p>
+                    <p class="copyright">Copyrightⓒ2025.DaJeongLee.All rightsreserved.</p>
+
+                </small>
+
+            </article><!-- .contents end -->
+        </div><!-- .inner -->
+
+    </footer><!-- #footer end -->
 
 </body>
 

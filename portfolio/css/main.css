@@ -31,6 +31,12 @@ section .inner {
   justify-content: space-between;
   align-items: center;
 }
+#header .inner .logo {
+  width: 100px;
+}
+#header .inner .logo a img {
+  display: block;
+}
 #header .inner .gnb {
   font-size: 18px;
   display: flex;
@@ -41,6 +47,9 @@ section .inner {
   align-items: center;
   padding: 300px 0;
   gap: 10.5%;
+}
+.section-01 .inner .section_title {
+  font-size: 36px;
 }
 .section-01 .inner .image {
   width: 23.5%;

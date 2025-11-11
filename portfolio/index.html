@@ -9,13 +9,24 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <script src="js/main.JS"></script>
+<script src="../portfolio/lib/jquery-3.7.1.min.js"></script>
 <script>
     $(function () {
-        $('html').animate({
-            scrollTop: $('#target-element').offset().top
-        }, 800);
+        $('.tab_menu li button').on('click', function (e) {
+            e.preventDefault();
 
-    })
+            // 클릭한 버튼이 몇 번째 li인지
+            const index = $(this).parent().index(); // 0,1,2...
+
+            // 메뉴 active 처리
+            $('.tab_menu li').removeClass('active');
+            $(this).parent().addClass('active');
+
+            // 내용 active 처리
+            $('.section-02 .contents .tab_list').removeClass('active');
+            $('.section-02 .contents .tab_list').eq(index).addClass('active');
+        });
+    });
 </script>
 
 <body>
@@ -29,7 +40,7 @@
             <ul class="gnb">
                 <li><a href="#" class="menu menu-01">MAIN</a></li>
                 <li><a href="#" class="menu menu-02">ABOUT</a></li>
-                <li><a href="#" class="menu menu-03">WEB/APP</a></li>
+                <li><a href="#" class="menu menu-03">WEB/MOBILE</a></li>
                 <li><a href="#" class="menu menu-04">DESIGN</a></li>
                 <li><a href="#" class="menu menu-05">CONTACT</a></li>
 
@@ -103,14 +114,14 @@
         <section class="section-02 section">
             <div class="inner">
                 <h2 class="section_title">Web/App</h2><!-- .section_title end -->
-                <ul class="cat_wrap">
-                    <li><button class="web_renewal">Web</button></li>
+                <ul class="tab_menu">
+                    <li class="active"><button class="web_renewal">Web</button></li>
                     <li><button class="app_renewal">Mobile</button></li>
                     <li><button class="clone_coding">Clone Coding</button></li>
-                </ul><!-- .cat_wrap end -->
+                </ul><!-- .tab_menu end -->
                 <article class="contents">
 
-                    <div class="list list-01">
+                    <div class="tab_list list-01 active">
                         <div class="item">
                             <h3 class="item-title">[반응형] ‘가일전통안료’ 웹 페이지 리뉴얼</h3>
                             <div class="item-left">
@@ -146,7 +157,12 @@
                                     </li>
 
                                 </ul><!-- .project_info end -->
-                                <img src="img/source/QRcode1.svg" alt="" class="QR">
+                                <div class="QR">
+                                    <img src="img/source/QRcode1.svg" alt="" class="QR_pc">
+                                    <button class="QR_mobile">
+                                        <img src="img/icon/icon_qr.svg" alt="" class="QR_btn">
+                                    </button>
+                                </div><!-- .QR end -->
 
                                 <ul class="link_wrap">
                                     <li><a href="https://dajeong-lee-commits.github.io/gail-home/">Web Site</a></li>
@@ -192,7 +208,13 @@
                                     </li>
 
                                 </ul><!-- .project_info end -->
-                                <img src="img/source/QRcode1.svg" alt="" class="QR">
+                                <div class="QR">
+                                    <img src="img/source/QRcode1.svg" alt="" class="QR_pc">
+                                    <button class="QR_mobile">
+                                        <img src="img/icon/icon_qr.svg" alt="" class="QR_btn">
+                                    </button>
+                                </div><!-- .QR end -->
+
 
                                 <ul class="link_wrap">
                                     <li><a href="https://dajeong-lee-commits.github.io/whipped/">Web Site</a></li>
@@ -233,8 +255,6 @@
                                     </li>
 
                                 </ul><!-- .project_info end -->
-                                <img src="img/source/QRcode1.svg" alt="" class="QR">
-
                                 <ul class="link_wrap">
                                     <li><a
                                             href="https://www.figma.com/design/ikWmFDFExVNeifC77wt04T/%EC%84%B1%EC%8B%AC%EB%8B%B9_%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=9-71&m=dev&t=dmOaY8mziiCNPUTq-1">Figma</a>
@@ -246,11 +266,11 @@
                                 </ul>
                             </div><!-- .item-right end -->
                         </div><!-- .item end -->
-                    </div><!-- .list.list-01 end -->
+                    </div><!-- tab_list.list-01 end -->
 
 
 
-                    <div class="list list-02">
+                    <div class="tab_list list-02">
                         <div class="item">
                             <h3 class="item-title">‘레고’ 모바일 앱 리뉴얼</h3>
                             <div class="item-left">
@@ -271,7 +291,7 @@
                             <div class="item-right">
                                 <ul class="project_info">
                                     <li>
-                                        <strong>참여도</strong>8
+                                        <strong>참여도</strong>
                                         <p>기획, 디자인, 퍼블리싱 100%</p>
                                     </li>
                                     <li>
@@ -286,7 +306,12 @@
                                     </li>
 
                                 </ul><!-- .project_info end -->
-                                <img src="img/source/QRcode1.svg" alt="" class="QR">
+                                <div class="QR">
+                                    <img src="img/source/QRcode1.svg" alt="" class="QR_pc">
+                                    <button class="QR_mobile">
+                                        <img src="img/icon/icon_qr.svg" alt="" class="QR_btn">
+                                    </button>
+                                </div><!-- .QR end -->
 
                                 <ul class="link_wrap">
                                     <li><a
@@ -329,7 +354,6 @@
                                     </li>
 
                                 </ul><!-- .project_info end -->
-                                <img src="img/source/QRcode1.svg" alt="" class="QR">
 
                                 <ul class="link_wrap">
                                     <li><a
@@ -341,10 +365,10 @@
                             </div><!-- .item-wrap end -->
                         </div><!-- .item end -->
 
-                    </div><!-- .list.list-02 end -->
+                    </div><!-- .tab_list.list-02 end -->
 
 
-                    <div class="list list-03">
+                    <div class="tab_list list-03">
 
                         <div class="item">
                             <h3 class="item-title">[반응형] ‘쏘카’ 클론 코딩</h3>
@@ -370,19 +394,17 @@
                                     <li>
                                         <strong>목적</strong>
                                         <p>실제 서비스의 구조와 인터랙션을 분석하며, 실무에 가까운 코딩 감각을 기르기 위해 진행한 프로젝트입니다.
-                                             유지보수성을 고려한 구조 설계를 통해 실무 중심의 웹 퍼블리싱 역량을 강화하는 것을 목표로 했습니다.</p>
+                                            유지보수성을 고려한 구조 설계를 통해 실무 중심의 웹 퍼블리싱 역량을 강화하는 것을 목표로 했습니다.</p>
                                     </li>
 
                                 </ul><!-- .project_info end -->
-                                <img src="img/source/QRcode1.svg" alt="" class="QR">
-
                                 <ul class="link_wrap">
                                     <li><a href="https://dajeong-lee-commits.github.io/socar/#">Web Site</a></li>
                                 </ul>
                             </div><!-- .item-wrap end -->
                         </div><!-- .item end -->
 
-                    </div><!-- .list.list-03 end -->
+                    </div><!-- .tab_list.list-03 end -->
                 </article><!-- .contents end -->
             </div><!-- .inner -->
         </section><!-- .section-02.section end -->

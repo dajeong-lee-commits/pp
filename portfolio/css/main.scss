@@ -103,7 +103,7 @@ section .inner,
       height: 100vh;
       .visual_text {
         height: 100%;
-        font-size: 140px;
+        font-size: 120px;
         font-weight: 800;
         line-height: 1;
         text-align: center;
@@ -199,7 +199,7 @@ section .inner,
       flex-direction: column;
       align-items: center;
 
-      .cat_wrap {
+      .tab_menu {
         display: flex;
         justify-content: center;
         gap: 12px;
@@ -209,18 +209,20 @@ section .inner,
           button {
             @include btnStylePC();
             padding: 4px 16px;
+            cursor: pointer;
           }
 
-          a:hover {
+          button:hover {
             @include btnHover();
           }
         }
+        li.active button {
+          @include btnHover();
+        }
       }
 
-      .list {
-        display: flex;
-        flex-direction: column;
-        gap: 150px;
+      .tab_list {
+        display: none;
 
         .item {
           display: flex;
@@ -228,6 +230,7 @@ section .inner,
           position: relative;
           padding: 85px 0 0 0;
           gap: 20px;
+          margin-bottom: 150px;
 
           .item-title {
             width: 100%;
@@ -301,6 +304,7 @@ section .inner,
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            align-items: center;
             position: relative;
 
             .project_info {
@@ -319,19 +323,22 @@ section .inner,
             }
 
             .QR {
-              display: block;
-              position: absolute;
-              bottom: 0;
-              right: 0;
-              width: 23.47%;
-
-              margin: 0 30px 30px 0;
-              object-fit: cover;
-              display: none;
+              display: flex;
+              justify-content: center;
+              width: 39.06%;
+              min-width: 84px;
+              .QR_pc {
+                @include imgBox();
+              }
+              .QR_mobile {
+                display: none;
+              }
             }
 
             .link_wrap {
+              width: 100%;
               display: flex;
+              justify-content: space-between;
               flex-wrap: wrap;
               gap: 12px;
 
@@ -360,18 +367,18 @@ section .inner,
           }
         }
       }
-    }
-  }
-
-  .section-02 {
-    .web_renewal {
-      @include btnClicked;
+      .tab_list.active {
+        display: block;
+      }
     }
   }
 
   .section-03 {
-    .app_renewal {
-      @include btnClicked;
+    .inner {
+      padding: 50px 0 200px;
+      .app_renewal {
+        @include btnClicked;
+      }
     }
   }
 
@@ -421,7 +428,7 @@ section .inner,
   }
 }
 
-@media screen and (min-width: 850px) and (max-width: 1024px) {
+@media screen and (min-width: 861px) and (max-width: 1024px) {
   html,
   body {
   }
@@ -453,6 +460,14 @@ section .inner,
     }
   }
   #main {
+    .main_visual {
+      .inner {
+        .visual_text {
+          font-size: 100px;
+
+        }
+      }
+    }
     .section-01 {
       .inner {
         .section_title {
@@ -518,8 +533,8 @@ section .inner,
 
     .section {
       .inner {
-        .cat_wrap {
-          gap: 16px;
+        .tab_menu {
+          gap: 8px;
           margin-bottom: 30px;
 
           li {
@@ -530,12 +545,13 @@ section .inner,
           }
         }
         .contents {
-          .list {
+          .tab_list {
             gap: 100px;
 
             .item {
               padding: 72px 0 0 0;
               gap: 16px;
+              margin-bottom: 100px;
 
               .item-title {
                 font-size: 28px;
@@ -546,7 +562,7 @@ section .inner,
                 gap: 16px;
 
                 .image {
-                  padding: 40px 24px 40px;
+                  padding: 44px 24px 44px;
                   border-radius: 24px;
                 }
 
@@ -577,16 +593,16 @@ section .inner,
                 border-radius: 24px;
 
                 .project_info {
-                  gap: 12px;
+                  gap: 10px;
 
                   p {
                     font-size: 15px;
+                    line-height: 1.4;
                   }
                 }
 
                 .QR {
-                  width: 31.97%;
-                  margin: 0 24px 24px 0;
+                  min-width: unset;
                 }
 
                 .link_wrap {
@@ -610,6 +626,9 @@ section .inner,
           }
         }
       }
+    }
+    .section-03 .inner {
+      padding: 0 0 100px;
     }
   }
   #footer {
@@ -639,7 +658,7 @@ section .inner,
   }
 }
 
-@media screen and (max-width: 849px) {
+@media screen and (max-width: 860px) {
   html,
   body {
     font-size: 14px;
@@ -678,6 +697,13 @@ section .inner,
   }
 
   #main {
+    .main_visual {
+      .inner {
+        .visual_text {
+          font-size: 60px;
+        }
+      }
+    }
     .section-01 {
       .inner {
         .section_title {
@@ -743,7 +769,7 @@ section .inner,
     }
     .section {
       .inner {
-        .cat_wrap {
+        .tab_menu {
           width: 100%;
           gap: 8px;
           margin-bottom: 30px;
@@ -756,13 +782,14 @@ section .inner,
           }
         }
         .contents {
-          .list {
+          .tab_list {
             gap: 60px;
 
             .item {
               flex-direction: column;
               padding: 0;
               gap: 16px;
+              margin-bottom: 60px;
 
               .item-title {
                 position: static;
@@ -813,11 +840,13 @@ section .inner,
                 padding: 0 0 42px;
                 border: none;
                 border-radius: 0;
+                
 
                 .project_info {
                   border: 1px solid #333333;
                   padding: 16px;
                   border-radius: 16px;
+                  gap: 10px;
 
                   p {
                     font-size: 14px;
@@ -825,20 +854,38 @@ section .inner,
                 }
 
                 .QR {
-                  top: 0;
-                  bottom: auto;
-                  width: 31.97%;
                   margin: 16px 16px 0 0;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
                   width: 36px;
-                  height: 36px;
+
+                  min-width: unset;
+                  .QR_pc {
+                    display: none;
+                  }
+                  .QR_mobile {
+                    display: block;
+                    padding: 0 8px;
+                    width: 100%;
+                    height: 36px;
+                    background-color: #d9d9d9;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    .QR_btn {
+                      width: 20px;
+                      display: block;
+                    }
+                  }
                 }
 
                 .link_wrap {
                   flex-wrap: nowrap;
                   row-gap: 0;
-                  gap: 16px;
+                  gap: 8px;
                   position: absolute;
                   bottom: 0;
+                  justify-content: flex-start;
 
                   li {
                     width: auto;
@@ -858,6 +905,9 @@ section .inner,
           }
         }
       }
+    }
+    .section-03 .inner {
+      padding: 60px 0 120px;
     }
   }
   #footer {
